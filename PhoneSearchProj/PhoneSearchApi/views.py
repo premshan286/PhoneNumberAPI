@@ -7,13 +7,13 @@ from PhoneSearchApi.models import PhoneNumber
 from PhoneSearchApi.serializer import PhoneNumberSerializer
 
 def index(request):
-    responseList = ['<p>Phone Search index</p>']
-    responseList.append('<p>Search using one of the following api calls</p>')
+    responseList = ['<h1>Phone Search index</h1>']
+    responseList.append('<p><b>Search using one of the following api calls<b></p>')
     responseList.append('<p><a href=/search-by-country-code-api?countrycode=1>search by Country Code</a></p>')
-    responseList.append('<p><a href=/search-by-region-code-api?regioncode=1>search by Region Code</a></p>')
-    responseList.append('<p><a href=/search-by-localexchange-code-api?localexchangecode=1>search by Local Exchange Code</a></p>')
-    responseList.append('<p><a href=/search-by-number-api?number=1>search by Number Code</a></p>')
-    responseList.append('<p><a href=/search-api?countrycode=1&regioncode=1&localexchangecode=1&number=1>search by Number Code</a></p>')
+    responseList.append('<p><a href=/search-by-region-code-api?regioncode=885>search by Region Code</a></p>')
+    responseList.append('<p><a href=/search-by-localexchange-code-api?localexchangecode=293>search by Local Exchange Code</a></p>')
+    responseList.append('<p><a href=/search-by-number-api?number=7670>search by Number Code</a></p>')
+    responseList.append('<p><a href=/search-api?countrycode=1&regioncode=684&localexchangecode=995&number=7670>search using all fields</a></p>')
 
     return HttpResponse(''.join(responseList))
 
