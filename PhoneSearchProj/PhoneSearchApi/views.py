@@ -19,7 +19,7 @@ def index(request):
 
 def search_by_countryCode_api(request):
     """
-    List all phone numbers matching the criteria in the request.
+    List all phone numbers matching the country code in the query string.
     """
     if request.method == 'GET':
         countrycode = request.GET.get('countrycode')
@@ -33,7 +33,7 @@ def search_by_countryCode_api(request):
         
 def search_by_regionCode_api(request):
     """
-    List all phone numbers matching the criteria in the request.
+    List all phone numbers matching the region code in the query string.
     """
     if request.method == 'GET':
         regioncode = request.GET.get('regioncode')
@@ -46,7 +46,7 @@ def search_by_regionCode_api(request):
         
 def search_by_localExchangeCode_api(request):
     """
-    List all phone numbers matching the criteria in the request.
+    List all phone numbers matching the local exchange code in the query string.
     """
     if request.method == 'GET':
         localExchangecode = request.GET.get('localexchangecode')
@@ -59,7 +59,7 @@ def search_by_localExchangeCode_api(request):
         
 def search_by_number_api(request):
     """
-    List all phone numbers matching the criteria in the request.
+    List all phone numbers matching the number in the query string.
     """
     if request.method == 'GET':
         number = request.GET.get('number')
@@ -72,7 +72,7 @@ def search_by_number_api(request):
 
 def search_api(request):
     """
-    List all phone numbers matching the criteria in the request.
+    List all phone numbers matching the combination of country code, region code, local exchange code and number in the query string.
     """
     if request.method == 'GET':
         countrycode = request.GET.get('countrycode')
