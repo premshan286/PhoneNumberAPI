@@ -1,6 +1,6 @@
 asgiref==3.2.3
 autocomplete==0.0.104
-bottle==0.12.18
+bottle==0.12.19
 certifi==2019.11.28
 chardet==3.0.4
 Django==3.0
